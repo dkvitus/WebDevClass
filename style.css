@@ -22,9 +22,11 @@ img {
     top: 0;
 }
 
-nav, footer, h1, {
-    display: flex;
+header {
     text-align: center;
-    justify-content: center;
     margin-left: auto
+}
+
+footer {
+    text-align: center;
 }
