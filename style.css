@@ -22,7 +22,7 @@ img {
     top: 0;
 }
 
-footer, header {
+nav, footer, h1, {
   display: flex;
   align-items: center;
   justify-content: center;
