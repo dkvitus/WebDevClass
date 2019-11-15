@@ -8,7 +8,7 @@ aside {
     color: #29627e;
 }
 
-aside > p {
+aside > p,img {
     margin: .5rem;
 }
 
