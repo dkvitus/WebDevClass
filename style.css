@@ -24,11 +24,17 @@ img {
 
 header {
     text-align: center;
-    margin-left: auto
+    margin-left: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+
 }
 
 footer {
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 body {
