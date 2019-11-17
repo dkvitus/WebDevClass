@@ -1,0 +1,110 @@
+#crousalDemo1 {
+	display: none;
+}
+.nbs-crousal-container {
+	position: relative;
+	max-width: 100%;
+}
+.crousal{ margin-top:10px;}
+.nbs-crousal-ul {
+	position: relative!important;
+	width:9999px;
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;	 
+}
+.nbs-crousal-inner {
+	overflow: hidden!important;
+	float: none;
+	width: 100%;
+	margin: 0px;
+	background-color: transparent;
+	padding:15px 0 30px 0;
+}
+.nbs-crousal-item {
+	float: left;	
+	cursor: pointer;
+	position: relative;
+	line-height: 0px;
+	margin: 0;
+}
+.nbs-crousal-item img {	
+	margin-bottom: 0;
+	margin-top: 0;
+	padding:0px;
+	position: relative; width:100%;
+	
+}
+/*** Navigation ***/
+
+.nbs-crousal-nav-left, .nbs-crousal-nav-right {
+	width: 24px;
+	height: 37px;
+	position: absolute;
+	cursor: pointer;
+	z-index: 100;
+}
+.nbs-crousal-nav-left {
+	background-image:url(images/large_left.jpg);
+	height:37px; padding:0 12px;
+	left: 48%;
+	bottom: -50px!important;
+	width:14px; top:100%!important; background-repeat:no-repeat; background-color:#fff; background-position:top center;
+}
+
+.nbs-crousal-nav-right {	
+	height: 37px; 
+	background-image:url(images/large_right.jpg);
+	right: 48%;
+	bottom: -50px!important;
+	width:14px; top:100%!important;  padding:0 12px;  background-repeat:no-repeat; background-color:#fff; background-position:top center;
+	
+}
+
+
+
+
+
+@media screen and (max-width: 992px) {
+.nbs-crousal-inner {
+	background-color: rgba(0, 0, 0, 0);
+	float: none;
+	margin: 0;
+	overflow: hidden;
+	width: 100%;
+}
+}
+@media screen and (max-width: 800px) {
+
+.nbs-crousal-nav-left{ left:47%;}
+.nbs-crousal-nav-right{ right:47%;}
+
+}
+
+
+
+@media screen and (max-width: 640px) {
+.nbs-crousal-nav-left{ left:46%;}
+.nbs-crousal-nav-right{ right:46%;}
+
+}
+
+
+@media screen and (max-width: 550px) {
+.nbs-crousal-nav-left{ left:45%;}
+.nbs-crousal-nav-right{ right:45%;}
+
+}
+
+
+@media screen and (max-width: 414px) {
+.nbs-crousal-nav-left{ left:44%;}
+.nbs-crousal-nav-right{ right:44%;}
+
+}
+
+@media screen and (max-width: 320px) {
+.nbs-crousal-nav-left{ left:42%;}
+.nbs-crousal-nav-right{ right:42%;}
+
+}
