@@ -1,3 +1,31 @@
 p {
-    background-color: chocolate;
+    background-color: rgb(161, 145, 134);
+}
+
+.asideParagraph {
+    background-color: rgb(127, 15, 112);
+}
+
+#secondAsideParagraph {
+    background-color: #ffffff;
+}
+
+h1 {
+    font-style: italic;
+    color: darkblue;
+}
+
+nav {
+    background-color: rgb(96, 117, 156);
+}
+body{
+    /*
+    background-image: url(./Cafu/images/Logo1.png);
+    */
+    background-color: dimgray;
+
+}
+
+h1 {
+    color: firebrick;
 }
