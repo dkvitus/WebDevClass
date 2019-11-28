@@ -2,19 +2,52 @@
 <html>
 
   <head>
+    <title>San Antonio Boka</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
   </head>
 
   <body>
-    <h1 id="title">Boka</h1>
-    <h4>by Vi-2s-Dk</h4>
-
-    <p id="text-area">Welcome to Blackjack!</p>
+    <header class="container">
+      <div class="jumbotron">
+        <h1 id="title">San Antonio Boka</h1>
+        <h4>by Vi-2s-Dk</h4>  
+        
     <button id="new-game-button">New Game!</button>
     <button id="hit-button">Hit!</button>
     <button id="stay-button">Stay</button>
-    
-    <script src="Boka.js"></script>
+          
+      </div>
+    </header>
+
+    <section class="container">
+      <div class="row">
+          <article class="col-sm-6" id="dealersCards">
+            Dealers Cards
+
+          </article>
+          <article class="col-sm-6" id="plaleysCards">
+            Players Cards
+
+          </article>
+      </div>
+      <div class="row">
+          <div class="col-sm-3">
+
+            </div>
+            <div class="col-sm-6">
+                <p id="text-area">Welcome to Blackjack!</p>
+            </div>
+            <div class="col-sm-3">
+              
+            </div>      
+      </div>
+    </section>
+
+
+    <script src="blackjack-m6.js"></script>
     
   </body>
 
