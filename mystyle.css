@@ -60,5 +60,23 @@ h1 {
     position: fixed;
     left: 0;
     top:0;
-  bottom: auto; */
+  bottom: auto; 
+}
+*/
+
+@keyframes myAnime{
+    from {color: red;}
+    to {color: blue;}
+}
+
+h1 {
+    font-style: oblique;
+    animation-name: myAnime; 
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+/*
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-direction: alternate;
+*/
 }
