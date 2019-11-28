@@ -206,21 +206,26 @@ function showStatus() {
     'Dealer has:\n' +
     dealerCardString + 
     '(score: '+ dealerScore  + ')\n\n';
+    dealersCards.style.backgroundColor = "white";
   
 
   playersCards.innerText = 
     'Player has:\n' +
     playerCardString +
     '(score: '+ playerScore  + ')\n\n';
+    playersCards.style.backgroundColor = "white";
+
   
   if (gameOver) {
     if (playerWon) {
-      playersCards.innerText += "YOU WIN!";
       textArea.innerText += "\nPLAYER WINS!";
+      playersCards.innerText += "YOU WIN!";
+      playersCards.style.backgroundColor = "yellow";
     }
     else {
       textArea.innerText += "\nDEALER WINS";
       dealersCards.innerText += "WINNER!!!";
+      dealersCards.style.backgroundColor = "yellow";
     }
     newGameButton.style.display = 'inline';
     hitButton.style.display = 'none';
