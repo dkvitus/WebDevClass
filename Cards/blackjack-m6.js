@@ -5,9 +5,11 @@
 
 // Card variables
 let suits = ['Hearts', 'Clubs', 'Diamonds', 'Spades'],
+    bokaSuits =["♥","♣","♦","♠"]
     values = ['Ace', 'King', 'Queen', 'Jack', 
     'Ten', 'Nine', 'Eight', 'Seven', 'Six',
     'Five', 'Four', 'Three', 'Two'];
+    bokaValues = ["A","K","Q","J","10","9","8","7","6","5","4","3","2"]
 
 // DOM variables
 let textArea = document.getElementById('text-area'),
