@@ -1,9 +1,9 @@
 p {
-    background-color: rgb(161, 145, 134);
+    background-color: burlywood;
 }
 
 .asideParagraph {
-    background-color: rgb(127, 15, 112);
+    background-color: blanchedalmond;
 }
 
 #secondAsideParagraph {
@@ -16,16 +16,49 @@ h1 {
 }
 
 nav {
-    background-color: rgb(96, 117, 156);
+    background-color: coral;
+    float:right;
+    text-align: right;
+    font-size: 20px;
 }
 body{
     /*
     background-image: url(./Cafu/images/Logo1.png);
     */
-    background-color: dimgray;
+    background-color:ghostwhite;
+    border: chocolate;
+    border-style: solid;
+    padding: 100px;
+    margin: 50px;
+    border-left-width: 100px;
+    border-left-style: double;
+
 
 }
 
 h1 {
-    color: firebrick;
+    color: blue;
+    font-family: cursive;
+    font-size: 60px;
+    text-align: center;
+}
+
+#myTitles{
+    text-align: center;
+    font-size: 40px;
+}
+
+#GoToTop{
+    background-color: red;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+/* 
+#myPic{
+    position: fixed;
+    left: 0;
+    top:0;
+  bottom: auto; */
 }

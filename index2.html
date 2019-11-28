@@ -6,39 +6,56 @@
   <meta name="Description" content="Course teaching the basics of HTML markup" />
   <meta name="keywords" lang="en-us" content="DkVitus, HTML, Vi2sDk" />
   <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
-  <link rel="stylesheet" href="mystyle.css" />
-  
-</head>
-<body>
-  <header>
-    <a name="TheTop"> </a>
-    
-      <p>
-        HTML Fundamentals - Example Static Site on GitHub
-      </p>
-    
-    
-    <h1>
-      Vitus "Dk" Dzekedze
-    </h1>
-    <p>    
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <p>
-        <a href="http://dkvitus.com" target="_blank">
-                My HTML Instructor
-        </a>
-      </p>
-      
-      Senior IT Consultant, <br> Senior Business, Data and Systems Analyst and <br>Full Stack Web & Mobile Developer
-    </p>
+  <link rel="stylesheet" href="mystyle.css" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+
+
+
+
+</head>
+<body class="container-fluid">
+      <a name="TheTop"> </a>
+  <header>
+    <div class="row">
+    
+      <div class="col-sm-3">
+            <i class="fa fa-briefcase" style="font-size:200px;"></i>
+      </div>
+      <div class="col-sm-9">
   <nav>
     <a href="#PersonalInfo" alt="Go to Personal Info">Personal </a> - 
     <a href="#TechInfo" alt="Go to Technical Info">Technical </a> - 
     <a href="#SoftInfo" alt="Go to Software Info">Software </a> - 
     <a href="#ProgInfo" alt="Go to Programming Info">Programming </a> - 
     <a href="#RefInfo" alt="Go to References Info">References </a> - 
-    <a href="#Summary" alt="Go to Summary Info">Summary Info</a> - 
+    <a href="#Summary" alt="Go to Summary Info">Summary </a> - 
   </nav>
+
+      </div>
+    </div>
+    <h1 id="myName">
+        Vitus "Dk" Dzekedze
+          </h1>
+          
+              <button type="button" onclick='document.getElementById("myName").innerHTML = "Galabe and HEB!"'>Say Hello!</button>
+              
+              
+
+          <p id="myTitles">    
+            Senior IT Consultant, <br> Senior Business, Data and Systems Analyst and <br>Full Stack Web & Mobile Developer
+          </p>
+    
+<button type="button" 
+          onclick="document.getElementById('testId').innerHTML = Date()">  Show me Date, Nyam!      </button>
+<p id="testId">
+  The date will show here...
+</p>
     
   </header>
   
@@ -50,9 +67,27 @@
         </h2>
       </a>
 
-      - <a href="#TheTop" alt="Go to Top">Back To Top.</a> -
+      - <a href="#TheTop" id="GoToTop" alt="Go to Top">
+        <img src="./media/BackToTop.png" alt="Back to Top" width="80px">
+      </a> -
       <br />
      
+      <!--
+      <div class="dropdown show">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Web Dev Students
+          </a>
+        
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Bankc Fon - Absent!</a>
+            <a class="dropdown-item" href="#">Galabe ETC - Present</a>
+            <a class="dropdown-item" href="#">Henry HEB - Present</a>
+            <a class="dropdown-item" href="#">Bobo Rodman - Jungle!</a>
+          </div>
+        </div>
+
+      -->
+
       
       <aside>
       <a name="Summary">
@@ -80,7 +115,7 @@
 
         <br />
 
-        <img src="https://pbs.twimg.com/profile_images/954357778927247361/lFLsSsuA_400x400.jpg" alt="Vitus Dk.">
+        <img class="img-circle" id="myPic" src="https://pbs.twimg.com/profile_images/954357778927247361/lFLsSsuA_400x400.jpg" alt="Vitus Dk.">
 
       </aside>      
       
@@ -89,8 +124,10 @@
       </strong>
       <br />
       <address>
-        1234 Main Street
-      </address> 
+<a href="https://www.google.com/maps/place/Vi-2s-Dk/@29.5187463,-98.4857042,15z/data=!4m5!3m4!1s0x0:0xdad2edd9fe66d2b6!8m2!3d29.5187463!4d-98.4857042" target="_blank">
+  84 NE Interstate 410 Loop Ste 279,  </br />
+  San Antonio, TX 78216
+</a></address> 
       
       <strong> 
         Phone: 
@@ -151,9 +188,7 @@
         <h2> 
           Overall Technical Skills
         </h2>
-      </a>
-      
-      - <a href="#TheTop" alt="Go to Top">Back To Top.</a> -
+
       <br />
 
       <p>
@@ -184,7 +219,6 @@
         </h2>
       </a>
 
-      - <a href="#TheTop" alt="Go to Top">Back To Top.</a> -
       <br />
       
       <p>
@@ -299,11 +333,9 @@
           Programming Aptitude
         </h2>
       </a>
-
-      - <a href="#TheTop" alt="Go to Top">Back To Top.</a> -
       <br />
 
-        <table>
+        <table class="table table-dark table-hover ">
           <caption>
             <!--
               Table Caption
@@ -535,8 +567,6 @@
           Professional References
         </h2>
       </a>
-
-      - <a href="#TheTop" alt="Go to Top">Back To Top.</a> -
       <br />
       
       <p>
@@ -554,8 +584,6 @@
     All Rights Reserved!<br />
     &copy; 2019. Vitus Dk. 
     <br />
-     - <a href="#TheTop" alt="Go to Top">Back To Top.</a> -
-
   </footer>
 </body>
 </html>
