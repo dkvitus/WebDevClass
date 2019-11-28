@@ -191,9 +191,9 @@ function showStatus() {
   }
   
   updateScores();
-/*   
-  textArea.innerText = 
-    'Dealer has:\n' +
+  
+  textArea.innerText = "";
+/*    'Dealer has:\n' +
     dealerCardString + 
     '(score: '+ dealerScore  + ')\n\n' +
     
@@ -201,12 +201,12 @@ function showStatus() {
     playerCardString +
     '(score: '+ playerScore  + ')\n\n';
 */
+
   dealersCards.innerText = 
     'Dealer has:\n' +
     dealerCardString + 
     '(score: '+ dealerScore  + ')\n\n';
   
-
 
   playersCards.innerText = 
     'Player has:\n' +
@@ -216,10 +216,10 @@ function showStatus() {
   if (gameOver) {
     if (playerWon) {
       playersCards.innerText += "YOU WIN!";
-      textArea.innerText = "PLAYER WINS!";
+      textArea.innerText += "\nPLAYER WINS!";
     }
     else {
-      textArea.innerText = "DEALER WINS";
+      textArea.innerText += "\nDEALER WINS";
       dealersCards.innerText += "WINNER!!!";
     }
     newGameButton.style.display = 'inline';
