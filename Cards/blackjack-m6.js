@@ -11,6 +11,8 @@ let suits = ['Hearts', 'Clubs', 'Diamonds', 'Spades'],
 
 // DOM variables
 let textArea = document.getElementById('text-area'),
+    dealersCards = document.getElementById('dealersCards'),
+    playersCards = document.getElementById('playersCards'),
     newGameButton = document.getElementById('new-game-button'),
     hitButton = document.getElementById('hit-button'),
     stayButton = document.getElementById('stay-button');
@@ -171,6 +173,10 @@ function checkForEndOfGame() {
 function showStatus() {
   if (!gameStarted) {
     textArea.innerText = 'Welcome to Blackjack!';
+    dealersCards.innerText = "Dealers Cards";
+    playersCards.innerText = "Players Cards";
+
+
     return;
   }
   
@@ -185,7 +191,7 @@ function showStatus() {
   }
   
   updateScores();
-   
+/*   
   textArea.innerText = 
     'Dealer has:\n' +
     dealerCardString + 
@@ -194,13 +200,27 @@ function showStatus() {
     'Player has:\n' +
     playerCardString +
     '(score: '+ playerScore  + ')\n\n';
+*/
+  dealersCards.innerText = 
+    'Dealer has:\n' +
+    dealerCardString + 
+    '(score: '+ dealerScore  + ')\n\n';
+  
+
+
+  playersCards.innerText = 
+    'Player has:\n' +
+    playerCardString +
+    '(score: '+ playerScore  + ')\n\n';
   
   if (gameOver) {
     if (playerWon) {
-      textArea.innerText += "YOU WIN!";
+      playersCards.innerText += "YOU WIN!";
+      textArea.innerText = "PLAYER WINS!";
     }
     else {
-      textArea.innerText += "DEALER WINS";
+      textArea.innerText = "DEALER WINS";
+      dealersCards.innerText += "WINNER!!!";
     }
     newGameButton.style.display = 'inline';
     hitButton.style.display = 'none';
