@@ -17,3 +17,13 @@ h3{
     background-color: skyblue;
     color: red;
 }
+h3{
+    border-top: 10px;
+    border-right: 1px;
+    border-bottom: 5px;
+    border-left: 20px;
+
+    /*
+    border: 10px 1px 5px 20px;
+*/
+}
