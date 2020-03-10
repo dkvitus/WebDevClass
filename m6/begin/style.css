@@ -29,3 +29,8 @@ p{
     background-color: yellow;
     text-indent: 10px;
 }
+
+ul{
+    background-color: khaki;
+    list-style: none;
+}
