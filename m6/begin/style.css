@@ -1,0 +1,30 @@
+/*  
+Author:
+Date: 
+Version:
+Requester:
+Objective:
+
+*/
+
+/* Change body background to lightblue*/
+body{
+    background-color: lightblue;
+}
+
+/* Change section background to orange, requested by Kat*/
+section{
+    background-color: orange;
+}
+
+#testimonials{
+    background-color: chocolate;
+}
+
+p{
+    background-color: crimson;
+}
+
+.paragraph1{
+    background-color: yellow;
+}
