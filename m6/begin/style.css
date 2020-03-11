@@ -31,6 +31,27 @@ p{
 }
 
 ul{
-    background-color: khaki;
     list-style: none;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+ul li{
+    display: ;
+
+    width: 220px;
+    background-color: khaki;
+    border-bottom: 3px solid black;
+    border-left: 15px solid chocolate;
+    border-right: 15px solid chocolate;
+
+}
+
+h1,h2,h3,h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.myh3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
