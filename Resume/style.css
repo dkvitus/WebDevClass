@@ -9,3 +9,7 @@ figure{
     height: auto;
     margin: auto;
 }
+
+.container-fluid{
+    display: grid;
+}
