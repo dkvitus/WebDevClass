@@ -3,6 +3,7 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 px;
 }
 
 #title{
@@ -20,7 +21,7 @@ h3{
 h3{
     border-top: 10px;
     border-right: 1px;
-    border-bottom: 5px;
+    border-bottom: 2px;
     border-left: 20px;
 
     /*
@@ -28,5 +29,5 @@ h3{
 */
 }
 .the-card{
-    font-size: 10rem;
+    font-size: 7rem;
 }

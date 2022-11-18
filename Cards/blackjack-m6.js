@@ -46,7 +46,7 @@ newGameButton.addEventListener('click', function() {
   newGameButton.style.display = 'none';
   hitButton.style.display = 'inline';
   stayButton.style.display = 'inline';
-  showStatus();
+  showNewStatus();
 });
 
 hitButton.addEventListener('click', function() {
@@ -91,6 +91,198 @@ function getCardString(card) {
 
 function getNextCard() {
     return deck.shift();
+}
+
+function cardDisplay(card ){
+  let theCard = card.value + ' of ' + card.suit;
+  //alert("&#127137;");
+  //document.write('&#127137');
+
+
+  switch(theCard) {
+    case 'Ace of Spades': 
+          return '&#127137;';
+          console.log('&#127137' );
+          break;
+    case 'Two of Spades': 
+          return '&#127138;';
+          break;
+    case 'Three of Spades': 
+          return '&#127139;';
+          break;
+    case 'Four of Spades': 
+          return '&#127140;';
+          break;
+    case 'Five of Spades': 
+          return '&#127141;';
+          break;
+    case 'Six of Spades': 
+          return '&#127142;';
+          break;
+    case 'Seven of Spades': 
+          return '&#127143;';
+          break;
+    case 'Eight of Spades': 
+          return '&#127144;';
+          break;
+    case 'Nine of Spades': 
+          return '&#127145;';
+          break;
+    case 'Ten of Spades': 
+          return '&#127146;';
+          break;
+    case 'Jack of Spades': 
+          return '&#127147;';
+          break;
+    case 'Knight of Spades': 
+          return '&#127148;';
+          break;
+    case 'Queen of Spades': 
+          return '&#127149;';
+          break;
+    case 'King of Spades': 
+          return '&#127150;';
+          break;
+    case 'Ace of Hearts': 
+          return '&#127153;';
+          break;
+    case 'Two of Hearts': 
+          return '&#127154;';
+          break;
+    case 'Three of Hearts': 
+          return '&#127155;';
+          break;
+    case 'Four of Hearts': 
+          return '&#127156;';
+          break;
+    case 'Five of Hearts': 
+          return '&#127157;';
+          break;
+    case 'Six of Hearts': 
+          return '&#127158;';
+          break;
+    case 'Seven of Hearts': 
+          return '&#127159;';
+          break;
+    case 'Eight of Hearts': 
+          return '&#127160;';
+          break;
+    case 'Nine of Hearts': 
+          return '&#127161;';
+          break;
+    case 'Ten of Hearts': 
+          return '&#127162;';
+          break;
+    case 'Jack of Hearts': 
+          return '&#127163;';
+          break;
+    case 'Knight of Hearts': 
+          return '&#127164;';
+          break;
+    case 'Queen of Hearts': 
+          return '&#127165;';
+          break;
+    case 'King of Hearts': 
+          return '&#127166;';
+          break;
+    case 'Red joker': 
+          return '&#127167;';
+          break;
+    case 'Ace of Diamonds': 
+          return '&#127169;';
+          break;
+    case 'Two of Diamonds': 
+          return '&#127170;';
+          break;
+    case 'Three of Diamonds': 
+          return '&#127171;';
+          break;
+    case 'Four of Diamonds': 
+          return '&#127172;';
+          break;
+    case 'Five of Diamonds': 
+          return '&#127173;';
+          break;
+    case 'Six of Diamonds': 
+          return '&#127174;';
+          break;
+    case 'Seven of Diamonds': 
+          return '&#127175;';
+          break;
+    case 'Eight of Diamonds': 
+          return '&#127176;';
+          break;
+    case 'Nine of Diamonds': 
+          return '&#127177;';
+          break;
+    case 'Ten of Diamonds': 
+          return '&#127178;';
+          break;
+    case 'Jack of Diamonds': 
+          return '&#127179;';
+          break;
+    case 'Knight of Diamonds': 
+          return '&#127180;';
+          break;
+    case 'Queen of Diamonds': 
+          return '&#127181;';
+          break;
+    case 'King of Diamonds': 
+          return '&#127182;';
+          break;
+    case 'Black joker': 
+          return '&#127183;';
+          break;
+    case 'Ace of Clubs': 
+          return '&#127185;';
+          break;
+    case 'Two of Clubs': 
+          return '&#127186;';
+          break;
+    case 'Three of Clubs': 
+          return '&#127187;';
+          break;
+    case 'Four of Clubs': 
+          return '&#127188;';
+          break;
+    case 'Five of Clubs': 
+          return '&#127189;';
+          break;
+    case 'Six of Clubs': 
+          return '&#127190;';
+          break;
+    case 'Seven of Clubs': 
+          return '&#127191;';
+          break;
+    case 'Eight of Clubs': 
+          return '&#127192;';
+          break;
+    case 'Nine of Clubs': 
+          return '&#127193;';
+          break;
+    case 'Ten of Clubs': 
+          return '&#127194;';
+          break;
+    case 'Jack of Clubs': 
+          return '&#127195;';
+          break;
+    case 'Knight of Clubs': 
+          return '&#127196;';
+          break;
+    case 'Queen of Clubs': 
+          return '&#127197;';
+          break;
+    case 'King of Clubs': 
+          return '&#127198;';
+          break;
+    case 'White joker': 
+          return '&#127199;';
+          break;
+    default:
+      return '&#127197;';
+      break;
+  }
+
 }
 
 function getCardNumericValue(card) {
@@ -172,24 +364,49 @@ function checkForEndOfGame() {
   }
 }
 
+function showNewStatus(){
+  textArea.innerText = 'Welcome to Blackjack!';
+  dealersCards.innerText = "Dealers Cards";
+  playersCards.innerText = "Players Cards";
+
+  return;
+}
 function showStatus() {
   if (!gameStarted) {
     textArea.innerText = 'Welcome to Blackjack!';
     dealersCards.innerText = "Dealers Cards";
     playersCards.innerText = "Players Cards";
+    //console.log('&#127137');
 
 
     return;
   }
   
   let dealerCardString = '';
+  var dealerItem = '';
+
+  var dealerItem = document.getElementById('dealersDisplay');
+  var dealerItemContent = dealerItem.innerHTML;
+
   for (let i=0; i < dealerCards.length; i++) {
     dealerCardString += getCardString(dealerCards[i]) + '\n';
+
+    //console.log(dealerItem);
+    dealerItem.innerHTML += cardDisplay(dealerCards[i]) + '\n';
   }
   
   let playerCardString = '';
+
+  var playerItem = document.getElementById('playersDisplay');
+  var playerItemContent = playerItem.innerHTML;
+
   for (let i=0; i < playerCards.length; i++) {
     playerCardString += getCardString(playerCards[i]) + '\n';
+      var playerShowCard = document.getElementById('playersDisplay').innerHTML;
+
+      //console.log(dealerItem);
+      playerItem.innerHTML += cardDisplay(playerCards[i])+ '\n';
+
   }
   
   updateScores();
