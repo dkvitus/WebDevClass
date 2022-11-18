@@ -46,18 +46,21 @@ newGameButton.addEventListener('click', function() {
   newGameButton.style.display = 'none';
   hitButton.style.display = 'inline';
   stayButton.style.display = 'inline';
-  showNewStatus();
+  clearBoard();
+  showStatus();
 });
 
 hitButton.addEventListener('click', function() {
   playerCards.push(getNextCard());
   checkForEndOfGame();
+  clearBoard();
   showStatus();
 });
 
 stayButton.addEventListener('click', function() {
   gameOver = true;
   checkForEndOfGame();
+  clearBoard();
   showStatus();
 });
 
@@ -371,6 +374,7 @@ function showNewStatus(){
 
   return;
 }
+
 function showStatus() {
   if (!gameStarted) {
     textArea.innerText = 'Welcome to Blackjack!';
@@ -385,27 +389,28 @@ function showStatus() {
   let dealerCardString = '';
   var dealerItem = '';
 
-  var dealerItem = document.getElementById('dealersDisplay');
-  var dealerItemContent = dealerItem.innerHTML;
+  //var dealerItemContent = dealerItem.innerHTML;
 
   for (let i=0; i < dealerCards.length; i++) {
     dealerCardString += getCardString(dealerCards[i]) + '\n';
 
     //console.log(dealerItem);
-    dealerItem.innerHTML += cardDisplay(dealerCards[i]) + '\n';
+    var dealerItem = document.getElementById('dealersDisplay');
+    dealerItem.innerHTML +=  cardDisplay(dealerCards[i]) + '\n';
   }
   
   let playerCardString = '';
+  var playerItem = '';
 
-  var playerItem = document.getElementById('playersDisplay');
-  var playerItemContent = playerItem.innerHTML;
+  //var playerItemContent = playerItem.innerHTML;
 
   for (let i=0; i < playerCards.length; i++) {
-    playerCardString += getCardString(playerCards[i]) + '\n';
+      playerCardString += getCardString(playerCards[i]) + '\n';
       var playerShowCard = document.getElementById('playersDisplay').innerHTML;
 
       //console.log(dealerItem);
-      playerItem.innerHTML += cardDisplay(playerCards[i])+ '\n';
+      var playerItem = document.getElementById('playersDisplay');
+      playerItem.innerHTML +=  cardDisplay(playerCards[i])+ '\n';
 
   }
   
@@ -451,4 +456,11 @@ function showStatus() {
     stayButton.style.display = 'none';
   }
 
+}
+
+function clearBoard(){
+  var dealerBoard = document.getElementById('dealersDisplay');
+
+  document.getElementById('dealersDisplay').innerHTML = '';
+  document.getElementById('playersDisplay').innerHTML = '';
 }
