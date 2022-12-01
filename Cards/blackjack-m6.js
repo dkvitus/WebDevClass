@@ -16,6 +16,7 @@ let textArea = document.getElementById('text-area'),
     dealersCards = document.getElementById('dealersCards'),
     playersCards = document.getElementById('playersCards'),
     newGameButton = document.getElementById('new-game-button'),
+    resetButton = document.getElementById('reset-button'),
     hitButton = document.getElementById('hit-button'),
     stayButton = document.getElementById('stay-button');
 
@@ -33,6 +34,23 @@ hitButton.style.display = 'none';
 stayButton.style.display = 'none';
 showStatus();
   
+resetButton.addEventListener('click', function() {
+  gameStarted = false;
+  gameOver = false;
+  playerWon = false;
+  
+  //deck = createDeck();
+  //shuffleDeck(deck);
+  //dealerCards = [ getNextCard(), getNextCard() ];
+  //playerCards = [ getNextCard(), getNextCard() ];
+  
+  newGameButton.style.display = 'inline';
+  hitButton.style.display = 'none';
+  stayButton.style.display = 'none';
+  clearBoard();
+  showStatus();
+});
+
 newGameButton.addEventListener('click', function() {
   gameStarted = true;
   gameOver = false;
@@ -46,7 +64,7 @@ newGameButton.addEventListener('click', function() {
   newGameButton.style.display = 'none';
   hitButton.style.display = 'inline';
   stayButton.style.display = 'inline';
-  clearBoard();
+  //clearBoard();
   showStatus();
 });
 
@@ -342,10 +360,11 @@ function checkForEndOfGame() {
     // let dealer take cards
     while(dealerScore < playerScore 
           && playerScore <= 21 
-          && dealerScore <= 21) {
-      dealerCards.push(getNextCard());
-      updateScores();
-    }
+          && dealerScore <= 21) 
+          {
+            dealerCards.push(getNextCard());
+            updateScores();
+          }
   }
   
   if (playerScore > 21) {
@@ -451,7 +470,7 @@ function showStatus() {
       dealersCards.innerText += "WINNER!!!";
       dealersCards.style.backgroundColor = "yellow";
     }
-    newGameButton.style.display = 'inline';
+    resetButton.style.display = 'inline';
     hitButton.style.display = 'none';
     stayButton.style.display = 'none';
   }
@@ -459,7 +478,7 @@ function showStatus() {
 }
 
 function clearBoard(){
-  var dealerBoard = document.getElementById('dealersDisplay');
+  //var dealerBoard = document.getElementById('dealersDisplay');
 
   document.getElementById('dealersDisplay').innerHTML = '';
   document.getElementById('playersDisplay').innerHTML = '';
