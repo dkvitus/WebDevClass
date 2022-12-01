@@ -1,0 +1,62 @@
+Playing Cards
+Symbol	HTML Code	HTML Entity	CSS Code	Hex Code	Unicode	Description
+🂠	&#127136;		\1F0A0	&#x1F0A0;	U+1F0A0	playing card back
+🂡	&#127137;		\1F0A1	&#x1F0A1;	U+1F0A1	ace of spades
+🂢	&#127138;		\1F0A2	&#x1F0A2;	U+1F0A2	two of spades
+🂣	&#127139;		\1F0A3	&#x1F0A3;	U+1F0A3	three of spades
+🂤	&#127140;		\1F0A4	&#x1F0A4;	U+1F0A4	four of spades
+🂥	&#127141;		\1F0A5	&#x1F0A5;	U+1F0A5	five of spades
+🂦	&#127142;		\1F0A6	&#x1F0A6;	U+1F0A6	six of spades
+🂧	&#127143;		\1F0A7	&#x1F0A7;	U+1F0A7	seven of spades
+🂨	&#127144;		\1F0A8	&#x1F0A8;	U+1F0A8	eight of spades
+🂩	&#127145;		\1F0A9	&#x1F0A9;	U+1F0A9	nine of spades
+🂪	&#127146;		\1F0AA	&#x1F0AA;	U+1F0AA	ten of spades
+🂫	&#127147;		\1F0AB	&#x1F0AB;	U+1F0AB	jack of spades
+🂬	&#127148;		\1F0AC	&#x1F0AC;	U+1F0AC	knight of spades
+🂭	&#127149;		\1F0AD	&#x1F0AD;	U+1F0AD	queen of spades
+🂮	&#127150;		\1F0AE	&#x1F0AE;	U+1F0AE	king of spades
+🂱	&#127153;		\1F0B1	&#x1F0B1;	U+1F0B1	ace of hearts
+🂲	&#127154;		\1F0B2	&#x1F0B2;	U+1F0B2	two of hearts
+🂳	&#127155;		\1F0B3	&#x1F0B3;	U+1F0B3	three of hearts
+🂴	&#127156;		\1F0B4	&#x1F0B4;	U+1F0B4	four of hearts
+🂵	&#127157;		\1F0B5	&#x1F0B5;	U+1F0B5	five of hearts
+🂶	&#127158;		\1F0B6	&#x1F0B6;	U+1F0B6	six of hearts
+🂷	&#127159;		\1F0B7	&#x1F0B7;	U+1F0B7	seven of hearts
+🂸	&#127160;		\1F0B8	&#x1F0B8;	U+1F0B8	eight of hearts
+🂹	&#127161;		\1F0B9	&#x1F0B9;	U+1F0B9	nine of hearts
+🂺	&#127162;		\1F0BA	&#x1F0BA;	U+1F0BA	ten of hearts
+🂻	&#127163;		\1F0BB	&#x1F0BB;	U+1F0BB	jack of hearts
+🂼	&#127164;		\1F0BC	&#x1F0BC;	U+1F0BC	knight of hearts
+🂽	&#127165;		\1F0BD	&#x1F0BD;	U+1F0BD	queen of hearts
+🂾	&#127166;		\1F0BE	&#x1F0BE;	U+1F0BE	king of hearts
+🂿	&#127167;		\1F0BF	&#x1F0BF;	U+1F0BF	red joker
+🃁	&#127169;		\1F0C1	&#x1F0C1;	U+1F0C1	ace of diamonds
+🃂	&#127170;		\1F0C2	&#x1F0C2;	U+1F0C2	two of diamonds
+🃃	&#127171;		\1F0C3	&#x1F0C3;	U+1F0C3	three of diamonds
+🃄	&#127172;		\1F0C4	&#x1F0C4;	U+1F0C4	four of diamonds
+🃅	&#127173;		\1F0C5	&#x1F0C5;	U+1F0C5	five of diamonds
+🃆	&#127174;		\1F0C6	&#x1F0C6;	U+1F0C6	six of diamonds
+🃇	&#127175;		\1F0C7	&#x1F0C7;	U+1F0C7	seven of diamonds
+🃈	&#127176;		\1F0C8	&#x1F0C8;	U+1F0C8	eight of diamonds
+🃉	&#127177;		\1F0C9	&#x1F0C9;	U+1F0C9	nine of diamonds
+🃊	&#127178;		\1F0CA	&#x1F0CA;	U+1F0CA	ten of diamonds
+🃋	&#127179;		\1F0CB	&#x1F0CB;	U+1F0CB	jack of diamonds
+🃌	&#127180;		\1F0CC	&#x1F0CC;	U+1F0CC	knight of diamonds
+🃍	&#127181;		\1F0CD	&#x1F0CD;	U+1F0CD	queen of diamonds
+🃎	&#127182;		\1F0CE	&#x1F0CE;	U+1F0CE	king of diamonds
+🃏	&#127183;		\1F0CF	&#x1F0CF;	U+1F0CF	black joker
+🃑	&#127185;		\1F0D1	&#x1F0D1;	U+1F0D1	ace of clubs
+🃒	&#127186;		\1F0D2	&#x1F0D2;	U+1F0D2	two of clubs
+🃓	&#127187;		\1F0D3	&#x1F0D3;	U+1F0D3	three of clubs
+🃔	&#127188;		\1F0D4	&#x1F0D4;	U+1F0D4	four of clubs
+🃕	&#127189;		\1F0D5	&#x1F0D5;	U+1F0D5	five of clubs
+🃖	&#127190;		\1F0D6	&#x1F0D6;	U+1F0D6	six of clubs
+🃗	&#127191;		\1F0D7	&#x1F0D7;	U+1F0D7	seven of clubs
+🃘	&#127192;		\1F0D8	&#x1F0D8;	U+1F0D8	eight of clubs
+🃙	&#127193;		\1F0D9	&#x1F0D9;	U+1F0D9	nine of clubs
+🃚	&#127194;		\1F0DA	&#x1F0DA;	U+1F0DA	ten of clubs
+🃛	&#127195;		\1F0DB	&#x1F0DB;	U+1F0DB	jack of clubs
+🃜	&#127196;		\1F0DC	&#x1F0DC;	U+1F0DC	knight of clubs
+🃝	&#127197;		\1F0DD	&#x1F0DD;	U+1F0DD	queen of clubs
+🃞	&#127198;		\1F0DE	&#x1F0DE;	U+1F0DE	king of clubs
+🃟	&#127199;		\1F0DF	&#x1F0DF;	U+1F0DF	white joker
